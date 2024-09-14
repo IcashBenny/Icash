@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Investment Dashboard</h1>
+
+    <!-- Verification Section -->
+    <div id="verificationSection">
+        <h2>Verification</h2>
+        <p>Pay a non-refundable fee to verify your account:</p>
+        <button onclick="verifyAccount(500)">Pay Ksh 500</button>
+        <button onclick="verifyAccount(1000)">Pay Ksh 1000</button>
+        <button onclick="verifyAccount(3000)">Pay Ksh 3000</button>
+        <p id="verificationStatus"></p>
+    </div>
+
+    <!-- Balance Display -->
+    <div id="balanceSection" class="hidden">
+        <h2>Your Balance</h2>
+        <div id="balance">Ksh 0.00</div>
+        <button onclick="addReferralEarnings(500)">Refer Client (Ksh 500)</button>
+        <button onclick="addReferralEarnings(1000)">Refer Client (Ksh 1000)</button>
